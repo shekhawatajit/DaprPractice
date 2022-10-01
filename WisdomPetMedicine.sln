@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WisdomPetMedicine.Common", "WisdomPetMedicine.Common\WisdomPetMedicine.Common.csproj", "{53362CF6-C294-4E03-BBDD-5A571600FA97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WisdomPetMedicine.Hospital.Domain", "WisdomPetMedicine.Hospital.Domain\WisdomPetMedicine.Hospital.Domain.csproj", "{D9F71CA5-F3A7-432B-A84F-91F9BACC3B22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WisdomPetMedicine.Hospital.Infrastructure", "WisdomPetMedicine.Hospital.Infrastructure\WisdomPetMedicine.Hospital.Infrastructure.csproj", "{E0A8D7FA-0812-4AAE-865D-87474206002C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WisdomPetMedicine.Hospital.Projector", "WisdomPetMedicine.Hospital.Projector\WisdomPetMedicine.Hospital.Projector.csproj", "{659D48A0-EE42-4E29-943E-0237B5223052}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WisdomPetMedicine.Hospital.Api", "WisdomPetMedicine.Hospital.Api\WisdomPetMedicine.Hospital.Api.csproj", "{09C9E6E1-85B5-4A63-87BF-B0BC81A9CF01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WisdomPetMedicine.Pet.Domain", "WisdomPetMedicine.Pet.Domain\WisdomPetMedicine.Pet.Domain.csproj", "{08AE6245-52A6-4782-9D7D-582BF3FFA961}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WisdomPetMedicine.Pet.Api", "WisdomPetMedicine.Pet.Api\WisdomPetMedicine.Pet.Api.csproj", "{E697AFAF-83F8-4E42-BFEE-7DD82BFABC49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WisdomPetMedicine.Rescue.Domain", "WisdomPetMedicine.Rescue.Domain\WisdomPetMedicine.Rescue.Domain.csproj", "{C1999139-0914-44DA-BB77-9E3362244298}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WisdomPetMedicine.Rescue.Api", "WisdomPetMedicine.Rescue.Api\WisdomPetMedicine.Rescue.Api.csproj", "{77AF9881-9E1A-4D2D-B91C-D5451E7870F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WisdomPetMedicine.RescueQuery.Api", "WisdomPetMedicine.RescueQuery.Api\WisdomPetMedicine.RescueQuery.Api.csproj", "{C50BDD57-A652-4336-B5A0-8FCC09734A43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53362CF6-C294-4E03-BBDD-5A571600FA97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53362CF6-C294-4E03-BBDD-5A571600FA97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53362CF6-C294-4E03-BBDD-5A571600FA97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53362CF6-C294-4E03-BBDD-5A571600FA97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9F71CA5-F3A7-432B-A84F-91F9BACC3B22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9F71CA5-F3A7-432B-A84F-91F9BACC3B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9F71CA5-F3A7-432B-A84F-91F9BACC3B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9F71CA5-F3A7-432B-A84F-91F9BACC3B22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A8D7FA-0812-4AAE-865D-87474206002C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A8D7FA-0812-4AAE-865D-87474206002C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A8D7FA-0812-4AAE-865D-87474206002C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A8D7FA-0812-4AAE-865D-87474206002C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{659D48A0-EE42-4E29-943E-0237B5223052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{659D48A0-EE42-4E29-943E-0237B5223052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{659D48A0-EE42-4E29-943E-0237B5223052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{659D48A0-EE42-4E29-943E-0237B5223052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C9E6E1-85B5-4A63-87BF-B0BC81A9CF01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C9E6E1-85B5-4A63-87BF-B0BC81A9CF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C9E6E1-85B5-4A63-87BF-B0BC81A9CF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C9E6E1-85B5-4A63-87BF-B0BC81A9CF01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08AE6245-52A6-4782-9D7D-582BF3FFA961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08AE6245-52A6-4782-9D7D-582BF3FFA961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08AE6245-52A6-4782-9D7D-582BF3FFA961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08AE6245-52A6-4782-9D7D-582BF3FFA961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E697AFAF-83F8-4E42-BFEE-7DD82BFABC49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E697AFAF-83F8-4E42-BFEE-7DD82BFABC49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E697AFAF-83F8-4E42-BFEE-7DD82BFABC49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E697AFAF-83F8-4E42-BFEE-7DD82BFABC49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1999139-0914-44DA-BB77-9E3362244298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1999139-0914-44DA-BB77-9E3362244298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1999139-0914-44DA-BB77-9E3362244298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1999139-0914-44DA-BB77-9E3362244298}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77AF9881-9E1A-4D2D-B91C-D5451E7870F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77AF9881-9E1A-4D2D-B91C-D5451E7870F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77AF9881-9E1A-4D2D-B91C-D5451E7870F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77AF9881-9E1A-4D2D-B91C-D5451E7870F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C50BDD57-A652-4336-B5A0-8FCC09734A43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50BDD57-A652-4336-B5A0-8FCC09734A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50BDD57-A652-4336-B5A0-8FCC09734A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50BDD57-A652-4336-B5A0-8FCC09734A43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

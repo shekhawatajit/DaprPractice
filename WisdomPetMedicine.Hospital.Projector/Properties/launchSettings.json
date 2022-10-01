@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "WisdomPetMedicine_Hospital_Projector": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7054",
+      "launchBrowser": false
+    }
+  }
+}

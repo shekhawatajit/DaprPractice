@@ -1,0 +1,76 @@
+dotnet new sln --name WisdomPetMedicine
+dotnet new classlib -o WisdomPetMedicine.Common
+dotnet sln add WisdomPetMedicine.Common/WisdomPetMedicine.Common.csproj
+
+dotnet new classlib -o WisdomPetMedicine.Hospital.Domain 
+dotnet sln add WisdomPetMedicine.Hospital.Domain/WisdomPetMedicine.Hospital.Domain.csproj
+cd WisdomPetMedicine.Hospital.Domain  
+dotnet add reference ../WisdomPetMedicine.Common/WisdomPetMedicine.Common.csproj
+cd ..
+
+dotnet new classlib -o WisdomPetMedicine.Hospital.Infrastructure
+dotnet sln add WisdomPetMedicine.Hospital.Infrastructure/WisdomPetMedicine.Hospital.Infrastructure.csproj
+cd WisdomPetMedicine.Hospital.Infrastructure
+dotnet add reference ../WisdomPetMedicine.Hospital.Domain/WisdomPetMedicine.Hospital.Domain.csproj
+dotnet add package Microsoft.Azure.Cosmos
+dotnet add package  Microsoft.Extensions.Configuration.Abstractions
+cd ..
+
+mkdir WisdomPetMedicine.Hospital.Projector
+cd WisdomPetMedicine.Hospital.Projector
+func new --name PatientsProjector --worker-runtime dotnet-isolated
+mv WisdomPetMedicine_Hospital_Projector.csproj WisdomPetMedicine.Hospital.Projector.csproj
+dotnet add package Microsoft.Data.SqlClient
+dotnet add reference ../WisdomPetMedicine.Hospital.Domain/WisdomPetMedicine.Hospital.Domain.csproj
+dotnet add reference ../WisdomPetMedicine.Hospital.Infrastructure/WisdomPetMedicine.Hospital.Infrastructure.csproj
+cd ..
+dotnet sln add WisdomPetMedicine.Hospital.Projector/WisdomPetMedicine.Hospital.Projector.csproj
+
+dotnet new webapi -o WisdomPetMedicine.Hospital.Api
+dotnet sln add WisdomPetMedicine.Hospital.Api/WisdomPetMedicine.Hospital.Api.csproj
+cd WisdomPetMedicine.Hospital.Api
+dotnet add package Dapper
+dotnet add package Swashbuckle.AspNetCore
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add reference ../WisdomPetMedicine.Hospital.Domain/WisdomPetMedicine.Hospital.Domain.csproj
+dotnet add reference ../WisdomPetMedicine.Hospital.Infrastructure/WisdomPetMedicine.Hospital.Infrastructure.csproj
+cd ..
+
+dotnet new classlib -o WisdomPetMedicine.Pet.Domain
+dotnet sln add WisdomPetMedicine.Pet.Domain/WisdomPetMedicine.Pet.Domain.csproj
+cd WisdomPetMedicine.Pet.Domain  
+dotnet add reference ../WisdomPetMedicine.Common/WisdomPetMedicine.Common.csproj
+cd ..
+
+dotnet new webapi -o WisdomPetMedicine.Pet.Api
+dotnet sln add WisdomPetMedicine.Pet.Api/WisdomPetMedicine.Pet.Api.csproj
+cd WisdomPetMedicine.Pet.Api  
+dotnet add reference ../WisdomPetMedicine.Pet.Domain/WisdomPetMedicine.Pet.Domain.csproj
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Dapper
+dotnet add package Swashbuckle.AspNetCore
+cd ..
+
+dotnet new classlib -o WisdomPetMedicine.Rescue.Domain 
+dotnet sln add WisdomPetMedicine.Rescue.Domain/WisdomPetMedicine.Rescue.Domain.csproj
+cd WisdomPetMedicine.Rescue.Domain 
+dotnet add reference ../WisdomPetMedicine.Common/WisdomPetMedicine.Common.csproj
+cd ..
+
+dotnet new webapi -o WisdomPetMedicine.Rescue.Api
+dotnet sln add WisdomPetMedicine.Rescue.Api/WisdomPetMedicine.Rescue.Api.csproj
+cd WisdomPetMedicine.Rescue.Api
+dotnet add reference ../WisdomPetMedicine.Rescue.Domain/WisdomPetMedicine.Rescue.Domain.csproj
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Dapper
+dotnet add package Swashbuckle.AspNetCore
+cd ..
+
+
+dotnet new webapi -o WisdomPetMedicine.RescueQuery.Api
+dotnet sln add WisdomPetMedicine.RescueQuery.Api/WisdomPetMedicine.RescueQuery.Api.csproj 
+cd WisdomPetMedicine.RescueQuery.Api
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Dapper
+dotnet add package Swashbuckle.AspNetCore
+cd ..
